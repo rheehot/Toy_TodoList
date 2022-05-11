@@ -24,8 +24,7 @@ fetch('https://raw.githubusercontent.com/Sweet-Pumpkin/mgs-toy-project/main/json
     const D1Price = obj.map(
 			v => v.date === D1 && v.inOut === 'out' ? v.price : null)
 			
-      .reduce((a, b) => {return a + b}, 0
-    );
+      .reduce((a, b) => {return a + b}, 0);
     
     const changeD1Price = D1Price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 

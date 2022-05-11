@@ -157,12 +157,14 @@ numDel.addEventListener("click", ResetHandler);
 const trsNext = document.querySelector(".next");
 const trsComplepg = document.querySelector(".trsComple")
 const trsCompleCencle = trsComplepg.querySelector('.close')
-console.log(trsNext);
+const lastMon = document.querySelector('.last_money')
+
 
 function trnCompleHandler(e) { 
 	e.preventDefault();
 	trsComplepg.classList.add('up');
-}
+
+	lastMon.textContent = trsDRNum.textContent}
 
 function trsComCan(e) { 
 	e.preventDefault();
