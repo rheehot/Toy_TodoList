@@ -134,12 +134,22 @@ const numDel = numBtnGr.querySelector(".del");
 function numberInnerHandler(e) { 
 	const numTarget = e.target.textContent;
 
+
 	trsDrnNumPut = trsDRNum.textContent += numTarget;
 	
 
 	const threept = trsDrnNumPut.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-	console.log(threept);
 	trsDRNum.textContent = threept;
+	const threeptLeng = threept.length 
+
+	if (threeptLeng > 19) { 
+		console.log('nope');
+		trsDRNum.textContent = numTarget;
+		
+	}
+
+	console.log(threept);
+	console.log(threeptLeng);
 }
 
 numBtn.forEach(function (numBBtn) {
