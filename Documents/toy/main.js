@@ -146,11 +146,11 @@ numBtn.forEach(function (numBBtn) {
 	numBBtn.addEventListener("click", numberInnerHandler);
 });
 
-function DeleteHandler() { 
+function ResetHandler() { 
 	trsDRNum.textContent = trsDRNum.textContent.slice(0,-1);
 }
 
-numDel.addEventListener("click", DeleteHandler);
+numDel.addEventListener("click", ResetHandler);
 
 
 //이체 결과페이지
