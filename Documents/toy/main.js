@@ -138,11 +138,11 @@ function numberInnerHandler(e) {
 	trsDrnNumPut = trsDRNum.textContent += numTarget;
 	
 
-	const threept = trsDrnNumPut.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	const threept = trsDrnNumPut
 	trsDRNum.textContent = threept;
 	const threeptLeng = threept.length 
 
-	if (threeptLeng > 19) { 
+	if (threeptLeng > 15) { 
 		console.log('nope');
 		trsDRNum.textContent = numTarget;
 		
@@ -174,7 +174,8 @@ function trnCompleHandler(e) {
 	e.preventDefault();
 	trsComplepg.classList.add('up');
 
-	lastMon.textContent = trsDRNum.textContent}
+	lastMon.textContent = trsDRNum.textContent.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 function trsComCan(e) { 
 	e.preventDefault();
