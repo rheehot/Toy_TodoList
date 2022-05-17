@@ -1,4 +1,4 @@
-const quotes = [
+const quotes = [ 
 	{
 		quote: "Don't dream, Be it",
 		author: "Tim curry"
