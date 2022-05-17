@@ -4,5 +4,5 @@
 
 - joson 으로 날씨 API 를 가져와 실시간 날씨와 지역을
 나타내고있습니다.
-(https://github.com/qjagkrdldi/chromeapp/blob/main/Documents/Toy_TodoList/chrome.png)
+<img  src="https://user-images.githubusercontent.com/16822641/109461495-913fc480-7aa5-11eb-9d0e-aff762669f98.gif"/>
 
