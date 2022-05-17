@@ -1,0 +1,24 @@
+* {margin:0; padding:0;}
+body{ overflow-y:none; }
+
+.hidden{
+	  display: none;
+}
+
+img {width:100%; min-width:1380px; font-size:0; position:absolute; left:0; top:0; z-index:-1; overflow-y:none;}
+
+body::-webkit-scrollbar { display: none; }
+
+#clock {font-size:100px; color:#fff; text-align: center; margin-top:300px;}
+#greeting {color:#fff; text-align: center; font-weight:normal}
+#todo-form {text-align: center;}
+#todo-form input{ background:none; color:#fff; border:none; border-bottom:1px solid #fff; margin:10px auto; text-align: center; padding:10px 0; font-size:15px; outline:none;}
+
+#todo-form > input::placeholder {color:#fff; font-size:18px; opacity: 0.5; }
+
+#quote {color:#fff; position:fixed; left:20px; top:2%;}
+#quote span {display:block; text-align:center}
+
+#weather {color:#fff; position:fixed; right:20px; top:2%;}
+
+#todo-list {text-align:center; color:#fff; font-size:18px; }
